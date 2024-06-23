@@ -1,0 +1,40 @@
+@hostname = localhost
+@port = 3000
+@host = {{hostname}}:{{port}}
+
+@id = 667800416103bd60d52e1a83
+
+
+### Get index.html
+GET http://{{host}}
+ 
+### Get todos
+GET http://{{host}}/todos
+Content-Type: application/json
+
+### create todo
+POST http://{{host}}/todos
+Content-Type: application/json
+
+{
+    "text": "luo uuden todon",
+    "done": "false"
+}
+
+### Get todo with id
+GET http://{{host}}/todos/{{id}}
+ 
+### update todo with id
+PUT http://{{host}}/todos/{{id}}
+Content-Type: application/json
+
+{
+    "text": "kotka",
+    "done": "true"
+}
+
+### delete todo with id
+DELETE http://{{host}}/todos/{{id}}
+
+
+
