@@ -17,8 +17,8 @@ POST http://{{host}}/todos
 Content-Type: application/json
 
 {
-    "text": "luo uuden todon",
-    "done": "false"
+    "text": "add new todo2 for Exercise 12.12", 
+    "done": "true"
 }
 
 ### Get todo with id
@@ -36,5 +36,7 @@ Content-Type: application/json
 ### delete todo with id
 DELETE http://{{host}}/todos/{{id}}
 
+### Get statistics from /statistics
+GET http://{{host}}/todos/statistics
 
 
