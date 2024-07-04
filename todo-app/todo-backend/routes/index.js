@@ -9,6 +9,7 @@ let visits = 0
 /* GET index data. */
 router.get('/', async (req, res) => {
   visits++
+  console.log('testing nodemon')
 
   res.send({
     ...configs,
