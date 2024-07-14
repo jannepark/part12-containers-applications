@@ -1,0 +1,10 @@
+POST http://localhost:3002/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjY0ZGEwMWEwNTRiNjRlNzk2ZWMxMjZlZCIsImlhdCI6MTY5MjExMjgzMCwiZXhwIjoxNjkyMTE2NDMwfQ.wwQI3TuDyZSjdQO8nM3HhAl67xTdJn2Ae7tbyodFSHE
+
+{
+    "title": "uusin",
+    "author": "suopriuseri",
+    "url": "http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html",
+    "likes": 672322233
+}
